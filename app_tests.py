@@ -4,8 +4,8 @@ import unittest
 class AppTestCase(unittest.TestCase):
 
     def setUp(self):
-        app.app.config['TESTING'] = True
-        self.app = app.app.test_client()
+        hello.app.config['TESTING'] = True
+        self.app = hello.app.test_client()
 
     #Nothing to put into the teardown for this testcase
     #def tearDown(self):
