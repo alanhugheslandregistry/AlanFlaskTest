@@ -3,3 +3,11 @@ python:
 - '2.7'
 install: pip install -r requirements.txt
 script: python app_tests.py
+deploy:
+  provider: heroku
+  api_key:
+    secure: DL1Sh7t1gqsFrcWNl9g11njI5SoMUm4fLS9+vVOhXUSqb9sYlGnXamo6SKLvB2uM2/6/llbeIgcmdS952AAH3Gi7RbFTY5GVJHO97OtEuU1VGOL5DtxqjizzUqtVhbk0LVXEnCubA5iYSUenvLcnCOcrV8gxOKIQbpWpMYPKptY=
+  app: peaceful-thicket-1154
+  on:
+    repo: alanhugheslandregistry/AlanFlaskTask
+  strategy: git
